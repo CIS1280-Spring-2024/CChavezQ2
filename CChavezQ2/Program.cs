@@ -86,7 +86,7 @@ namespace CChavezQ2
             Console.WriteLine("Current shirts orders:");
             if (orders.Count > 0)
             {
-                for (int i = 0; i < orders.Count; ++i) // DEBUGGING EDIT: count was called lke a method. removed () from orders.Count
+                for (int i = 0; i < orders.Count; ++i) // DEBUGGING EDIT: count was called lke a method. removed () from orders.Count for it to be called correctly
                 {
                     Console.WriteLine((i + 1) + ": " + orders[i]);
                 }

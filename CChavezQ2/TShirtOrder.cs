@@ -66,7 +66,8 @@ namespace CChavezQ2
             return FirstName + " "
                 + LastName + " "
                 //  + OrderDate.ToString("MM/dd/yyyy HH:mm:ss") + " " // DEBUGGING EDIT: THis is the orginoal line of code I explored other solutions
-                //  + OrderDate.ToString("MM dd yyyy HH mm ss") + " " //                But could not fiind one that comiles in the code. All solution I could get running on an external testbed would not work here.  
+                //  + OrderDate.ToString("MM-dd-yyyy") + " "            //  I build a test bed demo for myself out of this code: https://learn.microsoft.com/en-us/dotnet/api/system.datetime.tostring?view=net-8.0#system-datetime-tostring
+                // + OrderDate.ToString("MM dd yyyy HH mm ss") + " " //                But could not find a solution that compiles in this code. All solution I could get running on an external testbed would not work here.  
                 //  + OrderDate.ToString("G", DateTimeFormatInfo.InvariantInfo) + " " I don't know how the Order Date ToString works. Expecting me to "just find it on the internet" doesn't help much when I am taking a class to learn these things from an expert. If I really wanted to learn how to use AI to learn how to code I woud not be taking a class from a human. But I guess i'm the dumb one...
                 + " Price: " + Price.ToString("c");
         }
